@@ -1,0 +1,12 @@
+<div *ngIf="gifphy">
+  <div *ngFor="let item of gifphy; let i = index">
+    <div >
+      <strong>IMAGE {{i}}</strong> <br> {{item.slug}}
+    </div>
+    
+    <div>
+      <img src="{{item.images.original.url}}" alt="">
+    </div>
+
+  </div>
+</div>
